@@ -2,3 +2,4 @@ polybar
 picom
 rofi
 feh
+slock
