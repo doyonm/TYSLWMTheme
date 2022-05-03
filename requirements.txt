@@ -1,5 +1,7 @@
 polybar
-picom
+picom or compton
 rofi
 feh
 slock
+pulseaudio-control
+cmus
