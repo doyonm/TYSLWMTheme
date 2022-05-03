@@ -1,19 +1,19 @@
 {% for tag in workspace.tags %}
 {% if tag.mine %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
-%{F#000000}%{B#EBCB8B}  {{tag.name}}  %{B-}%{F-}
+%{T4}%{F#000000}%{B#EBCB8B}  {{tag.name}}  %{B-}%{F-}%{T-}
 %{A}
 {% elsif tag.visible  %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
-%{F#000000}%{B#E60053}  {{tag.name}}  %{B-}%{F-}
+%{T4}%{F#000000}%{B#E60053}  {{tag.name}}  %{B-}%{F-}%{T-}
 %{A}
 {% elsif tag.busy %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
-%{F#EBCB8B}  {{tag.name}}  %{F-}
+%{T4}%{F#EBCB8B}  {{tag.name}}  %{F-}%{T-}
 %{A}
 {% else %}
 %{A1:$SCRIPTPATH/change_to_tag {{workspace.index}} {{tag.index}}:}
-%{F#FFFFFF}  {{tag.name}}  %{F-}
+%{T4}%{F#FFFFFF}  {{tag.name}}  %{F-}%{T-}
 %{A}
 {% endif %}
 {% endfor %}
